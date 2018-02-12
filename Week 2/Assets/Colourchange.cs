@@ -10,12 +10,12 @@ public class Colourchange : MonoBehaviour {
 	public Color colour;
 
 	void Start () {
-		meshRenderer = GetComponent<MeshRenderer>
+		meshRenderer.GetComponent<MeshRenderer> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey ("up"))
-			meshRenderer.material.SetColor (colour);
+			meshRenderer.material.color = colour;
 	}
 }
